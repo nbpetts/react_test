@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import ReactDom from 'react-dom';
 
-import App from './components/app';
-import reducers from './reducers';
 
-ReactDOM.render(
-  <Provider store={createStore(reducers)}>
-    <App />
-  </Provider>
-  , document.querySelector('.container'));
+
+const App = () => {
+  return <div> HI! </div>;
+}
+
+
+
+
+ReactDom.render(<App />, document.querySelector('.container'));
